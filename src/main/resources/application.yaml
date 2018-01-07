@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: corp-demo
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/corp_db
+        username: root
+        password: Welcome10
