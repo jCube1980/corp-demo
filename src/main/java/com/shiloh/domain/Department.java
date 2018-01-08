@@ -1,5 +1,7 @@
 package com.shiloh.domain;
 
+import java.util.List;
+
 import javax.annotation.Generated;
 
 /**
@@ -23,6 +25,8 @@ public class Department {
     private org.joda.time.DateTime lastModifiedOn;
 
     private String name;
+    
+    private List<Employee> employees;
 
     public Integer getCompanyId() {
         return companyId;
@@ -87,6 +91,14 @@ public class Department {
     public void setName(String name) {
         this.name = name;
     }
+
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(List<Employee> employees) {
+		this.employees = employees;
+	}
 
 }
 

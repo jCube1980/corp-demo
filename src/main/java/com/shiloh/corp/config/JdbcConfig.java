@@ -32,7 +32,7 @@ public class JdbcConfig {
 
 	@Bean
 	public com.querydsl.sql.Configuration querydslConfiguration() {
-		SQLTemplates templates = MySQLTemplates.builder().build();
+		SQLTemplates templates = MySQLTemplates.builder().printSchema().build();
 		com.querydsl.sql.Configuration configuration = new com.querydsl.sql.Configuration(templates);
 		configuration.setExceptionTranslator(new SpringExceptionTranslator());
 		configuration.register(new DateTimeType());

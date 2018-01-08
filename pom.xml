@@ -89,7 +89,6 @@
 		  <groupId>org.slf4j</groupId>
 		  <artifactId>slf4j-log4j12</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -122,7 +121,7 @@
 		          </customTypes>
 		          <packageName>com.shiloh.query.type</packageName>
 		          <beanPackageName>com.shiloh.domain</beanPackageName>
-		          <exportBeans>true</exportBeans>
+		          <exportBeans>false</exportBeans>
 		          <targetFolder>${project.basedir}/target/generated-sources/java</targetFolder>
 		        </configuration>
 		        <dependencies>
